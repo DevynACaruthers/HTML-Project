@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Project #3</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <progress id="elem"></progress>
+    <script>
+        
+      elem.onclick = function() {
+        animate({
+          duration: 1500,
+          timing: function(timeFraction) {
+            return timeFraction;
+          },
+          draw: function(progress) {
+            elem.style.width = progress * 100 + '%';
+          }
+        });
+      };
+
+    </script>
+    <h1 class="primary_header">Hello there!</h1>
+    <div id="box">
+        <div id="h1">
+            <div id="text">
+                <p>
+                    <h1>The Introduction</h1>
+                    Hello dear viewer and/or patron of our company! We are excited to introduce this new and improved webpage for Soundbreaker Entertainment, showcasing our up-and-coming games
+            
+                    (and possible teasers) along with information about the company! Although we may be an indie studio we will make sure to produce quality games and projects to rival that of
+            
+                    AAA gaming corperations. 
+            
+                    <Br>
+            
+                        <h1>The Beginning</h1>
+            
+                        Sounbreaker studio started with the creator of the company: Devyn Caruthers. It was his vision to pioneer a world where people aren't anchored down by constrictive
+            
+                        contracts put in place to limit the creative freedom of animators, scriptwriters, and developers. He wanted to help make his dream a reality by creating a safe haven 
+            
+                        for creators to make whatever their heart desires, along with not being hindered by what was popular at the time or follow trends but create something truly timeless.
+            
+                        His first game was a snake game he may or may not have copied the majority of from his coding teacher, designed for a competition for one of his clubs. Unfortunately, it
+                        
+                        failed and acted more as a lesson then it's original purpose of being fun.
+            
+                        <h2>Future Projects</h2>
+            
+                        The first game planning to be made by the studio is a parody of CS:GO currently without a title, taking place in an office setting where people use typical office supplies
+            
+                        as weapons while planting a calculator "bomb" at the targetted location. However, it would not be that simple since we were also inspired by games like "Valorant" and
+            
+                        "Rainbow Six: Siege" by adding characters with unique abilites! This would drastically change combat and make it more strategic and engaging to the general audience,
+            
+                        not to mention let the team have fun with designing a bunch of different characters, (It won't be). We have others, but the ideas will have to develop more so stay tuned!
+                </p>
+            
+    <h1>Break boundaries with Soundbreaker Entertainment! </h1>
+    <br>
+    <p> <h4>Our goal is to create interactive gaming experiences that engage and challenge players to think differently while they explore imaginative stories. 
+        <br>
+        Our games range from single-player adventures to multiplatform games, pushing the boundaries of technology, art, and design.
+        <br>
+        Soundbreaker Entertainment is an innovative gaming studio founded with the goal of creating unique experiences for gamers.
+        <br>
+         We specialize in creating original story-driven games that challenge players to think creatively and make meaningful choices. 
+         <br>
+         From single-player adventures to multiplayer worlds, we strive to build immersive, engaging entertainment experiences. 
+         <br>
+         Our team of passionate developers are dedicated to crafting stories and worlds that our players will never forget. 
+         <br>
+         Join us on this exciting journey and be part of our ever-evolving journey. 
+         <br>
+        Sign up to get updates about new releases and special offers!
+        <br>
+        *We value your privacy. Your information will not be shared or sold. You can unsubscribe at any time.*
+        <br>
+        Follow Us On Social Media:
+        <br>
+        Twitter | Facebook | Instagram | YouTube
+        <br>
+        <h1>Check out Soundbreaker's other games:</h1>
+    </h4>
+        <br>
+        <h2>The Last Door</h2>
+        <br>
+        --------------------------
+        <br>
+        <h2>Ascension: New World</h2>
+        <br>
+        -------------------------------
+        <br>
+        <h2>A Funny CS:GO ripoff</h2>
+        <br>
+        ------------------------------
+        <br>
+    <h3>Stellar Reviews for Ascension: New World</h3>
+    <br>
+    <br>
+        "I have been playing a lot of Ascension: New World lately."
+        <br>
+        -A Game Guy
+        <br>
+        <br>
+        "Ascension: New World is one of those must play titles."
+        <br>
+        -GameGrumps
+        <br>
+        <br>
+        "My favorite game right now."
+        <br>
+        -Amanda Bowers
+        <br>
+        <br>
+        "This game has me hooked!"
+        <br>
+        -Tina Taneja
+        <br>
+        ------------------------------------------------------------
+        <br>
+    <h3>Reviews for The Last Door</h3>
+    <br>
+    <br>
+        "The world is terrifying, the graphics are stunningly beautiful and the gameplay is addicting."
+        <br>
+        -MoistCr1TiKaL
+        <br>
+        <br>
+        "It's the most scared I've been in a long while."
+        <br>
+        -Steven Speilberg
+        <br>
+        -------------------------------------------------------------
+        <br>
+    <h1>Our fans mean so much to us!</h1>
+        <h2>There are a few things that could use some improvement though, but that is why we receive community feedback to improve the overall experience.</h2>
+        <br>
+        <h2>Thank you for being apart of our journey.</h2>
+
+    <h3>You can help support us and grab yourself a copy today!</h3></p>
+
+    <script src="project.js"></script>
+
+    </div>
+
+        </div>
+
+</div>
+
+  <div class="ball1"></div>
+  <div class="ball2"></div>
+  <div class="ball3"></div>
+  <div class="ball4"></div>
+  <div class="ball5"></div>
+  <div class="ball6"></div>
+  <div class="ball7"></div>
+
+  <div id="button">
+
+    <button type="button" name="Left"
+
+                            onclick="pos(-1,0);">B</button>
+
+    <button type="button" name="right"
+
+                            onclick="pos(1,0);">A</button>
+
+    <button type="button" name="up"
+
+                            onclick="pos(0,-1);">L</button>
+
+    <button type="button" name="Down"
+
+                            onclick="pos(0,1);">L</button>
+
+    <button type="button" name="Hide"
+
+                            onclick="hideSquare()";>S</button>
+                            
+    <button type="button" name="Show"
+
+                            onclick="showSquare();">!</button>
+
+</div>
+
+<hr>
+
+<div id="square">
+</div>
+
+</div>
+
+<form name = "theform">
+  <br>
+  <h2 class="primary_header2">To sign up for our newsletter, put your email address here!</h2>
+  <input name = "newname" size= "20">
+  <input type = "button" name "addname" value = "Add"
+  onclick = "sortNames();">
+  
+  <textarea cols ="60" rowsa = "10" name = "sorted">
+
+  </textarea>
+</form>
+
+ <form name = "theform">
+  <br>
+  <h2 class="primary_header2">To join our team, leave your general info here!</h2>
+  <input name = "newname" size= "20">
+  <input type = "button" name "addname" value = "Add"
+  onclick = "sortNames();">
+  
+  <textarea cols ="60" rowsa = "10" name = "sorted">
+  </textarea>
+ </form>
+
+</body>
+
+</html>
